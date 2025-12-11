@@ -7,7 +7,9 @@
     },
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
-
+    "files.exclude": {
+        "**/__pycache__": true,
+    },
     // Python: Ruff as formatter + linter; Pytest test UI
     "[python]": {
         "editor.formatOnSave": false,

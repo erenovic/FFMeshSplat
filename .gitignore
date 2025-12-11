@@ -102,7 +102,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
+# .env
 .venv
 env/
 venv/
@@ -157,3 +157,6 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+
+data/raw
+outputs/

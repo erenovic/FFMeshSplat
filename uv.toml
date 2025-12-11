@@ -1,0 +1,9 @@
+# uv configuration
+# https://docs.astral.sh/uv/reference/settings/
+
+# Use copy mode instead of hardlinks (needed for cross-filesystem installs)
+link-mode = "copy"
+
+# Don't create a .venv - use existing virtual environment
+# Run uv commands with: uv sync --active
+# Or set environment variable: export UV_PROJECT_ENVIRONMENT=$VIRTUAL_ENV
