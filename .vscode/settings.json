@@ -1,26 +1,28 @@
 {
     // General editor behavior
     "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-        "source.fixAll": "explicit",
-        "source.organizeImports": "explicit"
-    },
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     "files.exclude": {
-        "**/__pycache__": true,
+        "**/__pycache__": true
     },
-    // Python: Ruff as formatter + linter; Pytest test UI
+
+    // Python: Ruff as formatter + linter
     "[python]": {
-        "editor.formatOnSave": false,
         "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.ruff": "explicit",
+            "source.organizeImports.ruff": "explicit"
+        },
         "editor.rulers": [110]
     },
+
+    // Pytest
     "python.testing.pytestEnabled": true,
     "python.testing.unittestEnabled": false,
     "python.testing.pytestArgs": ["tests"],
 
-    // Make the Problems panel useful
-    "ruff.nativeServer": "on",
-    "ruff.configuration": "ruff.toml",
+    // Ruff settings
+    "ruff.nativeServer": "on"
 }

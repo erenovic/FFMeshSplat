@@ -1,0 +1,8 @@
+
+dataset:
+  data_dir: "data/raw/OpenVidHD"
+  target_part: "part_1"
+  num_frames: 25
+  resize_width: 1024
+  resize_height: 576
+  multiple_of: 14

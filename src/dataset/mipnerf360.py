@@ -8,7 +8,7 @@ from src.dataset.resizing import resize_video
 from torch.utils.data import Dataset
 
 
-class OpenVidDataset(Dataset):
+class MipNerf360Dataset(Dataset):
     def __init__(self, cfg: DictConfig, target_part: str | None = None):
         self.data_dir = Path(cfg.data_dir)
         self.target_part = target_part
